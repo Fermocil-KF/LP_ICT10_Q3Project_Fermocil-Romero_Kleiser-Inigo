@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.title {
+    font-weight: bold;
+    color: #444;
+}
+
+.nav-buttons button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gradient-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background: #ba1a1a;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.player-list {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+    color: #555;
+    font-size: 17px;
+}
+
+.player-list li::before {
+    content: attr(data-rank) ") ";
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-weight: 700;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 12px; 
+    background: #ba1a1a;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.card {
+    margin-top: 120px !important;
+}
+</style>
+</head>
+<body>
+    
+    <nav class="navbar">
+    <div class="nav-logo">Intramurals SY 2025-2026</div>
+    <div class="nav-links">
+        <a href="index.html" class="nav-btn">Sign Up</a>
+        <a href="index1.html" class="nav-btn">Team Checker</a>
+        <a href="index2.html" class="nav-btn">Players</a>
+    </div>
+</nav>
+
+    <div class="container">
+        <h1>Intramurals Players:</h1>
+        <button class="gradient-btn">Click here</button>
+        
+        <ul class="player-list">
+            <li data-rank="1">Ancheta</li>
+            <li data-rank="2">Asuncion</li>
+            <li data-rank="3">Battung</li>
+            <li data-rank="4">Buevenida</li>
+            <li data-rank="5">Casul</li>
+            <li data-rank="6">Catapang</li>
+            <li data-rank="7">Chua</li>
+            <li data-rank="8">Eusebio</li>
+            <li data-rank="9">Evangelio</li>
+            <li data-rank="10">Fado</li>
+            <li data-rank="11">Fermocil</li>
+            <li data-rank="12">Fernando</li>
+            <li data-rank="13">Francia</li>
+            <li data-rank="14">Jimenez</li>
+            <li data-rank="15">Mabilog</li>
+            <li data-rank="16">Mactal</li>
+            <li data-rank="17">Magday</li>
+            <li data-rank="18">Moya</li>
+            <li data-rank="19">Mutia</li>
+            <li data-rank="20">Nazareno</li>
+            <li data-rank="21">Quinto</li>
+            <li data-rank="22">Romero</li>
+            <li data-rank="23">Santos</li>
+            <li data-rank="24">Sarao</li>
+            <li data-rank="25">Sy, B.</li>
+            <li data-rank="26">Sy, C.</li>
+            <li data-rank="27">Udono</li>
+            <li data-rank="28">Vida</li>           
+        </ul>
+    </div>
+
+</body>
+</html>
