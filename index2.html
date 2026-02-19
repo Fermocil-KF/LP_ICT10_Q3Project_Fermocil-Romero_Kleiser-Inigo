@@ -10,7 +10,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: white;
+    background: linear-gradient(135deg, #fceaea 0%, #f8d7da 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -176,6 +176,23 @@ h1 {
             <li data-rank="28">Vida</li>           
         </ul>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const button = document.querySelector('.gradient-btn');
+        const playerList = document.querySelector('.player-list');
+
+        playerList.style.display = 'none';
+
+        button.addEventListener('click', () => {
+            if (playerList.style.display === 'none') {
+                playerList.style.display = 'block';
+            } else {
+                playerList.style.display = 'none';
+            }
+        });
+    });
+    </script>
 
 </body>
 </html>
